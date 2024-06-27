@@ -55,6 +55,13 @@ function close() {
   closingModal?.close();
 }
 
+function destroy(el?: HTMLElement){
+  if (closingModal) {
+    return;
+  }
+  el?.remove();
+}
+
 function renderModal(
   props: Record<string, unknown>,
   el: HTMLElement,
@@ -89,7 +96,7 @@ function renderModal(
         closingModal = undefined;
       }, MODAL_DELAY);
     },
-    destroy(el  ){
+    destroy(el?: HTMLElement  ){
       this.close();
       el?.remove();
     }

@@ -48,5 +48,8 @@
     "dist",
     "types"
   ],
-  "types": "types/index.d.ts"
+  "types": "types/index.d.ts",
+  "publishConfig": {
+    "@tuezy:registry": "https://npm.pkg.github.com"
+  }
 }
