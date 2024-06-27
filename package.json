@@ -1,5 +1,5 @@
 {
-  "name": "vue-bs-modal",
+  "name": "@tuezy/vue-bs-modal",
   "description": "A Bootstrap style Vue.js modal",
   "version": "0.0.1",
   "private": false,
