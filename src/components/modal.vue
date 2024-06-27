@@ -1,5 +1,5 @@
 <template>
-  <div id="vbs-modal">
+  <div :id="id">
     <span>
       <transition
         appear
@@ -170,6 +170,10 @@ export default defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    id: {
+      type: String as PropType<string>,
+      default: "vbs-modal",
+    }
   },
   created() {
     this.show = true;

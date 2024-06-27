@@ -1,13 +1,13 @@
 {
   "name": "vue-bs-modal",
   "description": "A Bootstrap style Vue.js modal",
-  "version": "0.7.9",
+  "version": "0.0.1",
   "private": false,
   "author": {
     "name": "YellowBean",
     "email": "brazel@foxmail.com"
   },
-  "repository": "https://github.com/little-yellow-bean/vue-bs-modal",
+  "repository": "https://github.com/tuezy/vue-bs-modal",
   "homepage": "http://vue-bs-modal.yellowbean.top",
   "keywords": [
     "Modal",

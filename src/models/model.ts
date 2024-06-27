@@ -13,6 +13,7 @@ export const CONFIRM_OPTION_KEYS = [
   "backgroundScrolling",
   "staticBackdrop",
   "displayCloseBtn",
+  "id"
 ];
 
 export const MODAL_OPTION_KEYS = [
@@ -23,6 +24,7 @@ export const MODAL_OPTION_KEYS = [
   "center",
   "backgroundScrolling",
   "staticBackdrop",
+  "id"
 ];
 
 export interface ConfirmOption {
@@ -35,6 +37,7 @@ export interface ConfirmOption {
   backgroundScrolling?: boolean;
   staticBackdrop?: boolean;
   displayCloseBtn?: boolean;
+  id?: string;
 }
 
 export interface ModalOption {
@@ -45,6 +48,7 @@ export interface ModalOption {
   center?: boolean;
   backgroundScrolling?: boolean;
   staticBackdrop?: boolean;
+  id?: string;
 }
 
 export interface ModalRef {
@@ -52,6 +56,7 @@ export interface ModalRef {
   host: HTMLElement;
   closed: boolean;
   readonly close: () => void;
+  readonly destroy: (el?: HTMLElement) => void;
 }
 
 export interface Modal {
@@ -61,6 +66,7 @@ export interface Modal {
   ) => Promise<boolean>;
   readonly open: (options: ModalOption, el?: HTMLElement) => void;
   readonly close: () => void;
+  readonly destroy: (el?: HTMLElement) => void;
 }
 
 export enum ModalSize {

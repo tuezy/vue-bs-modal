@@ -89,6 +89,10 @@ function renderModal(
         closingModal = undefined;
       }, MODAL_DELAY);
     },
+    destroy(el  ){
+      this.close();
+      el?.remove();
+    }
   };
   currentModalRefs.push(modalRef);
   render(vnode, host);
@@ -119,6 +123,7 @@ export const modal: Modal = {
   confirm,
   open,
   close,
+  destroy
 };
 
 export default {
