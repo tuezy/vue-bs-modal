@@ -1,5 +1,5 @@
 {
-  "name": "@tuezy/vue-bs-modal",
+  "name": "tuezy/vue-bs-modal",
   "description": "A Bootstrap style Vue.js modal",
   "version": "0.0.1",
   "private": false,
@@ -7,8 +7,10 @@
     "name": "tuezy",
     "email": "tuezy.dev@gmail.com"
   },
-  "repository": "https://github.com/tuezy/vue-bs-modal",
-  "homepage": "http://vue-bs-modal.yellowbean.top",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuezy/vue-bs-modal.git"
+  },
   "keywords": [
     "Modal",
     "Dialog",
@@ -50,6 +52,6 @@
   ],
   "types": "types/index.d.ts",
   "publishConfig": {
-    "@tuezy:registry": "https://npm.pkg.github.com"
+    "tuezy:registry": "https://npm.pkg.github.com"
   }
 }
